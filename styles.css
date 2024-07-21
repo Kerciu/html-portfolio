@@ -173,3 +173,64 @@ main {
 .kacper-name {
     color: #000000;
 }
+
+footer {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #hello-message-with-name {
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    #personal-photo {
+        width: 70%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+    .info-link-button {
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #my-name {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    #hello-message-with-name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #personal-photo {
+        width: 90%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .info-link-button {
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+}
