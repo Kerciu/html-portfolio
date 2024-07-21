@@ -5,11 +5,30 @@ html, body {
 }
 
 body {
-    background: linear-gradient(135deg, #f5f5dc, #ecd0ab); /* Gradient kawowy */
+    position: relative;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     color: #3e2723;
-    margin-left: ;
 }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/images/WHITE WOOD BG-01.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -20,6 +39,7 @@ header {
     padding: 0 20px;
     box-sizing: border-box;
     width: 100%;
+    margin-bottom: 0;
 }
 
 nav ul {
@@ -51,22 +71,24 @@ nav ul li a:hover {
 }
 
 main {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Wyśrodkowuje elementy w pionie, jeśli wysokość jest zdefiniowana */
-    min-height: 100vh; /* Sprawia, że sekcja main zajmuje co najmniej 100% wysokości okna przeglądarki */
-    padding-top: 50px; /* Dostosuj padding według potrzeb */
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 0;
 }
 
 #my-name {
     font-size: 100px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-top: 0;
     color: #6f4e37;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1);
     text-align: center;
+    white-space: nowrap;
 }
 
 .social-media-icon {
@@ -75,16 +97,19 @@ main {
 
 #about {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding: 10px;
     box-sizing: border-box;
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
 }
 
 #hello-message-with-name {
     font-size: 30px;
-    margin-bottom: 20px;
+    flex: 2;
+    margin-right: 100px;
 }
 
 #personal-photo {
@@ -94,7 +119,7 @@ main {
     border: 4px solid #3e2723;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
+    margin-top: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -104,7 +129,6 @@ main {
 }
 
 .clickable-link-button-container {
-    margin-left: 20px;
     list-style-type: none;
     padding: 0;
 }
@@ -135,16 +159,16 @@ main {
 }
 
 .social-media-icons img {
-    width: 50px; /* Początkowy rozmiar */
+    width: 50px;
     height: 50px;
+    margin-left: 5px;
     margin-right: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-media-icons img:hover {
-    transform: scale(1.5); /* Powiększenie ikony */
+    transform: scale(1.5);
 }
-
 
 .kacper-name {
     color: #000000;
