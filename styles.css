@@ -61,8 +61,8 @@ header #chikara-kacper-logo {
     width: 600px;
     object-fit: cover;
     justify-content: flex-end;
-    border: black solid 5px;
-    border-radius: 50%;
+    border: black solid 1px;
+    border-radius: 10%;
     margin: 0;
     padding: 0;
     align-self: flex-start;
@@ -84,4 +84,8 @@ header #chikara-kacper-logo {
 
 .social-media-icons a {
     margin: 0 20px;
+}
+
+.kacper-name {
+    color: midnightblue;
 }
