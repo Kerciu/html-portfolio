@@ -2,31 +2,34 @@
 <span class="keyword">#include</span> &lt;<span class="header">stdio.h</span>&gt;
 
 <span class="keyword">typedef</span> <span class="keyword">struct</span> {
-    <span class="type">char*</span> <span class="variable">first_name</span>;
-    <span class="type">char*</span> <span class="variable">last_name</span>;
-    <span class="type">char*</span> <span class="variable">tech_stack</span>[10];
-    <span class="type">char*</span> <span class="variable">languages</span>[5];  <!-- Nowe umiejętności językowe -->
-    <span class="type">int</span> <span class="variable">hard_worker</span>, <span class="variable">passionate</span>, <span class="variable">ambitious</span>;
-    <span class="type">int</span> <span class="variable">creative</span>, <span class="variable">detail_oriented</span>;  <!-- Nowe cechy osobowościowe -->
+   <span class="type">char*</span> <span class="variable">first_name</span>;
+   <span class="type">char*</span> <span class="variable">last_name</span>;
+   <span class="type">char*</span> <span class="variable">tech_stack</span>[8];
+   <span class="type">char*</span> <span class="variable">hobbys</span>[8];
+   <span class="type">char*</span> <span class="variable">languages</span>[5];
+   <span class="type">int</span> <span class="variable">hard_worker</span>, <span class="variable">passionate</span>, <span class="variable">ambitious</span>, <span class="variable">creative</span>, <span class="variable">detail_oriented</span>;
 } <span class="class-name">Kacper</span>;
 
 <span class="keyword">int</span> <span class="function">main</span>() {
-    <span class="type">Kacper</span> <span class="variable">me</span> = { 
-        .<span class="variable">first_name</span> = <span class="string">"Kacper"</span>, 
-        .<span class="variable">last_name</span> = <span class="string">"Górski"</span>,
-        .<span class="variable">tech_stack</span> = {<span class="string">"C"</span>, <span class="string">"C++"</span>, <span class="string">"Java"</span>,
-            <span class="string">"Python"</span>, <span class="string">"HTML/CSS"</span>, <span class="string">"SQL"</span>,
-            <span class="string">"Assembly"</span>, <span class="string">"Git"</span>},
-        .<span class="variable">languages</span> = {<span class="string">"English"</span>, <span class="string">"Polish"</span>,
-            <span class="string">"Japanese"</span>, <span class="string">"German"</span>, <span class="string">"French"</span>}, <!-- Umiejętności językowe -->
-        .<span class="variable">hard_worker</span> = <span class="number">1</span>,
-        .<span class="variable">passionate</span> = <span class="number">1</span>,
-        .<span class="variable">ambitious</span> = <span class="number">1</span>,
-        .<span class="variable">creative</span> = <span class="number">1</span>, <!-- Cechy osobowościowe -->
-        .<span class="variable">detail_oriented</span> = <span class="number">1</span>
-    };
-    <span class="function">printf</span>(<span class="string">"Welcome to my Page!\\n"</span>);
-    <span class="keyword">return</span> <span class="number">0</span>;
+   <span class="type">Kacper</span> <span class="variable">me</span> = { 
+       .<span class="variable">first_name</span> = <span class="string">"Kacper"</span>,  .<span class="variable">last_name</span> = <span class="string">"Górski"</span>,
+       
+       .<span class="variable">tech_stack</span> = {<span class="string">"C"</span>, <span class="string">"C++"</span>, <span class="string">"Java"</span>, <span class="string">"Python"</span>, <span class="string">"HTML/CSS"</span>, <span class="string">"SQL"</span>,
+            <span class="string">"Assembly"</span>, <span class="string">"Git"</span>, <span class="string">"Data Structures & Algorithms"</span>},
+       
+       .<span class="variable">languages</span> = {<span class="string">"English"</span>, <span class="string">"Polish"</span>, <span class="string">"Japanese"</span>, <span class="string">"German"</span>, <span class="string">"French"</span>},
+       
+       .<span class="variable">hobbys</span> = {<span class="string">"Software Engineering"</span>, <span class="string">"AI & ML"</span>, <span class="string">"Gym & Fitness"</span>,
+            <span class="string">"Language Learning"</span>, <span class="string">"Travelling"</span>, <span class="string">"Reading"</span>},
+       
+       .<span class="variable">hard_worker</span> = <span class="number">1</span>,
+       .<span class="variable">passionate</span> = <span class="number">1</span>,
+       .<span class="variable">ambitious</span> = <span class="number">1</span>,
+       .<span class="variable">creative</span> = <span class="number">1</span>,
+       .<span class="variable">detail_oriented</span> = <span class="number">1</span>
+   };
+   <span class="function">printf</span>(<span class="string">"Welcome to my Page!\n"</span>);
+   <span class="keyword">return</span> <span class="number">0</span>;
 }
 
 </pre>
